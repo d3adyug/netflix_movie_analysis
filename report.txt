@@ -1,0 +1,166 @@
+# Netflix Movies Analysis Report
+
+## 1. Project Overview
+
+The Netflix Movies Analysis project aims to explore and analyze movie-related data to identify trends in ratings, popularity, genres, languages, and release years. The project combines Python for data cleaning and exploratory data analysis (EDA), PostgreSQL for database management and SQL querying, and Power BI for interactive dashboard creation.
+
+The objective is to transform raw movie data into meaningful insights that can support content analysis and decision-making.
+
+---
+
+## 2. Dataset Description
+
+The dataset contains information about movies available on Netflix, including:
+
+* Release Date
+* Title
+* Overview
+* Popularity Score
+* Vote Count
+* Vote Average
+* Original Language
+* Genre
+* Poster URL
+
+After preprocessing, the dataset contained approximately 9,826 records and 9 columns.
+
+---
+
+## 3. Tools and Technologies Used
+
+### Python
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+
+### Database
+
+* PostgreSQL
+* pgAdmin 4
+
+### Visualization
+
+* Power BI Desktop
+
+---
+
+## 4. Data Cleaning and Preprocessing
+
+Several preprocessing steps were performed to improve data quality:
+
+* Removed missing values using dropna()
+* Checked and removed duplicate records
+* Converted Release_Date to datetime format
+* Converted Vote_Count and Vote_Average to numeric format
+* Extracted Year from Release_Date
+* Verified data types and data consistency
+
+After cleaning, the dataset contained no null values and no duplicate records.
+
+---
+
+## 5. Exploratory Data Analysis (EDA)
+
+The following analyses were conducted:
+
+### Movies Released Per Year
+
+A trend analysis showed a significant increase in movie releases after 2000, with a peak around 2021–2022.
+
+### Genre Analysis
+
+Drama and Comedy emerged as the most common genres in the dataset.
+
+### Language Analysis
+
+English was the dominant language, followed by Japanese, Spanish, French, and Korean.
+
+### Popularity Analysis
+
+Movies such as Spider-Man: No Way Home and The Batman recorded the highest popularity scores.
+
+### Rating Analysis
+
+Highly rated movies were identified based on Vote Average and Vote Count.
+
+### Correlation Analysis
+
+A correlation matrix was generated to understand relationships among:
+
+* Popularity
+* Vote Count
+* Vote Average
+
+The analysis showed weak positive correlations among these variables.
+
+---
+
+## 6. SQL Analysis
+
+The cleaned dataset was loaded into PostgreSQL for querying and analysis.
+
+Example SQL operations performed:
+
+* Total number of movies
+* Top 10 genres
+* Top 10 languages
+* Highest-rated movies
+* Most popular movies
+* Average rating by language
+* Average popularity by genre
+* Movies released per year
+
+SQL helped validate findings obtained during exploratory data analysis.
+
+---
+
+## 7. Power BI Dashboard
+
+An interactive dashboard was created with three report pages.
+
+### Page 1: Executive Overview
+
+* Total Movies
+* Average Rating
+* Average Popularity
+* Total Genres
+* Total Languages
+* Movies Released Per Year
+* Genre Distribution
+* Top Genres
+
+### Page 2: Language Analysis
+
+* Movies by Language
+* Average Rating by Language
+* Average Popularity by Language
+* Language-based comparisons
+
+### Page 3: Detailed Movie Analysis
+
+* Genre Filter
+* Language Filter
+* Year Filter
+* Top 10 Most Popular Movies
+* Top 10 Highest Rated Movies
+* Popularity vs Rating Analysis
+* Vote Count vs Popularity Analysis
+
+---
+
+## 8. Key Findings
+
+* English is the most dominant movie language.
+* Drama and Comedy are the most frequent genres.
+* Movie releases increased significantly after 2000.
+* Popularity and ratings have only a weak positive relationship.
+* Some highly rated movies have relatively low vote counts.
+* Recent blockbuster movies dominate popularity rankings.
+
+---
+
+## 9. Conclusion
+
+This project demonstrates the complete data analytics workflow, including data cleaning, exploratory analysis, SQL querying, and dashboard development. By integrating Python, PostgreSQL, and Power BI, meaningful insights were extracted from movie data and presented through interactive visualizations. The project highlights practical skills in data analytics and business intelligence and serves as a strong portfolio project.
